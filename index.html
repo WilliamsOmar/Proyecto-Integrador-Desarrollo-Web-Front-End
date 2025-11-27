@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEvents - Encuentra tu próximo evento tecnológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span>TechEvents</span>
+            </a>
+            
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#events" class="nav-link">Eventos</a></li>
+                    <li><a href="#how-it-works" class="nav-link">Cómo Funciona</a></li>
+                    <li><a href="#organizers" class="nav-link">Para Organizadores</a></li>
+                    <li><a href="#" class="btn btn-secondary">Añadir Evento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Encuentra tu próximo evento tecnológico</h1>
+            <p class="hero-subtitle">Descubre, filtra y regístrate a conferencias, meetups y workshops de todo el mundo. Ahorra tiempo y enfócate en lo que importa: conectar y aprender.</p>
+            <div class="hero-actions">
+                <a href="#events" class="btn btn-large hero-btn">Explorar Eventos</a>
+                <a href="#organizers" class="btn btn-large btn-secondary" style="color: white; border-color: white;">Añadir Evento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container search-container">
+            <form class="search-form">
+                <div class="search-input-group">
+                    <label for="search" class="search-label">Buscar</label>
+                    <input type="text" id="search" class="search-input" placeholder="IA, Web3...">
+                </div>
+                
+                <div class="search-input-group">
+                    <label for="location" class="search-label">Ubicación</label>
+                    <select id="location" class="search-select">
+                        <option value="">Cualquier ubicación</option>
+                        <option value="online">En línea</option>
+                        <option value="mexico">Ciudad de México</option>
+                    </select>
+                </div>
+                
+                <div class="search-input-group">
+                    <label for="date" class="search-label">Fecha</label>
+                    <select id="date" class="search-select">
+                        <option value="">Cualquier fecha</option>
+                        <option value="week">Próxima semana</option>
+                        <option value="month">Este mes</option>
+                        <option value="quarter">Próximos 3 meses</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="search-btn">Buscar Eventos</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <p class="section-subtitle">Encuentra el evento perfecto en solo tres sencillos pasos</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">1. Explora</h3>
+                    <p class="step-description">Busca por categoría, fecha, ubicación y precio para encontrar eventos que se ajusten a tus intereses.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">✨</div>
+                    <h3 class="step-title">2. Descubre</h3>
+                    <p class="step-description">Encuentra eventos curados, con toda la información clave reunida en un solo lugar.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">🎟️</div>
+                    <h3 class="step-title">3. Asiste</h3>
+                    <p class="step-description">Haz clic en el enlace y regístrate directamente en la página oficial del evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="section" id="events">
+        <div class="container">
+            <h2 class="section-title">Eventos Destacados</h2>
+            <p class="section-subtitle">Descubre los eventos tecnológicos más interesantes de los próximos meses</p>
+            
+            <div class="events-grid">
+                <!-- Event 1 -->
+                 <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hackathon de Blockchain" class="event-image">
+                    <div class="event-content">
+                        <span class="event-category">Blockchain</span>
+                        <h3 class="event-title">Blockchain Hackathon 2025</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">📅 30-31 Dic, 2025</div>
+                            <div class="event-meta-item">📍 En línea</div>
+                            <div class="event-meta-item">👥 500+ participantes</div>
+                        </div>
+                        <p class="event-description">Hackathon de 48 horas para desarrollar soluciones innovadoras usando tecnología blockchain. Premios por valor de $50,000.</p>
+                        <div class="event-actions">
+                            <span class="event-price">Gratuito</span>
+                            <a href="#" class="btn btn-primary">Participar</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Event 2 -->
+                <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Conferencia de IA" class="event-image">
+                    <div class="event-content">
+                        <span class="event-category">Inteligencia Artificial</span>
+                        <h3 class="event-title">AI Summit 2026</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">📅 15-17 Feb, 2026</div>
+                            <div class="event-meta-item">📍 Ciudad de México</div>
+                            <div class="event-meta-item">👥 1,200+ asistentes</div>
+                        </div>
+                        <p class="event-description">La conferencia más importante sobre inteligencia artificial, con expertos internacionales y casos de uso reales.</p>
+                        <div class="event-actions">
+                            <span class="event-price">Desde $200</span>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Event 3 -->
+                <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meetup de Desarrollo Web" class="event-image">
+                    <div class="event-content">
+                        <span class="event-category">Desarrollo Web</span>
+                        <h3 class="event-title">Web Dev</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-item">📅 25 Mar, 2026</div>
+                            <div class="event-meta-item">📍 En línea</div>
+                            <div class="event-meta-item">👥 150+ asistentes</div>
+                        </div>
+                        <p class="event-description">Meetup para desarrolladores web. Esta edición se centrará en las últimas tendencias de React y Next.js.</p>
+                        <div class="event-actions">
+                            <span class="event-price">Gratuito</span>
+                            <a href="#" class="btn btn-primary">Registrarse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn btn-large btn-primary">Ver Todos los Eventos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Organizers -->
+    <section class="section organizers" id="organizers">
+        <div class="container">
+            <div class="organizers-content">
+                <div class="organizers-text">
+                    <h2 class="section-title" style="text-align: left;">Llega a tu audiencia ideal</h2>
+                    <p>¿Organizas eventos tecnológicos? Añade tu evento a nuestra plataforma y aumenta su visibilidad.</p>
+                    
+                    <ul class="organizers-list">
+                        <li class="organizers-item">
+                            <span class="organizers-icon">✓</span>
+                            <span>Aumenta la visibilidad y la asistencia a tu evento</span>
+                        </li>
+                        <li class="organizers-item">
+                            <span class="organizers-icon">✓</span>
+                            <span>Listado gratuito y fácil de gestionar</span>
+                        </li>
+                        <li class="organizers-item">
+                            <span class="organizers-icon">✓</span>
+                            <span>Promoción en nuestra newsletter y redes sociales</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="btn btn-large btn-primary">Añadir Mi Evento</a>
+                </div>
+                
+                <div>
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Organizador de eventos" style="border-radius: var(--border-radius);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter">
+        <div class="container">
+            <h2 class="section-title newsletter-title">No Te Pierdas Ningún Evento</h2>
+            <p class="section-subtitle newsletter-subtitle">Recibe cada semana los eventos más relevantes en tu bandeja de entrada</p>
+            
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="newsletter-btn">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">TechEvents</div>
+                    <p class="footer-description">La plataforma líder para descubrir eventos tecnológicos en todo el mundo. Conectamos a la comunidad tech con oportunidades de aprendizaje y networking.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Eventos Destacados</a></li>
+                        <li><a href="#" class="footer-link">Próximos Eventos</a></li>
+                        <li><a href="#" class="footer-link">Eventos en Línea</a></li>
+                        <li><a href="#" class="footer-link">Eventos Gratuitos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Inteligencia Artificial</a></li>
+                        <li><a href="#" class="footer-link">Desarrollo Web</a></li>
+                        <li><a href="#" class="footer-link">Ciberseguridad</a></li>
+                        <li><a href="#" class="footer-link">Blockchain</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Soporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Centro de Ayuda</a></li>
+                        <li><a href="#" class="footer-link">Contacto</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechEvents. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
