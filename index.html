@@ -16,8 +16,8 @@
             <nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#events" class="nav-link">Eventos</a></li>
                     <li><a href="#how-it-works" class="nav-link">Cómo Funciona</a></li>
+                    <li><a href="#events" class="nav-link">Eventos</a></li>
                     <li><a href="#organizers" class="nav-link">Para Organizadores</a></li>
                     <li><a href="#" class="btn btn-secondary">Añadir Evento</a></li>
                 </ul>
@@ -33,6 +33,34 @@
             <div class="hero-actions">
                 <a href="#events" class="btn btn-large hero-btn">Explorar Eventos</a>
                 <a href="#organizers" class="btn btn-large btn-secondary" style="color: white; border-color: white;">Añadir Evento</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <p class="section-subtitle">Encuentra el evento perfecto en solo tres sencillos pasos</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">1. Explora</h3>
+                    <p class="step-description">Busca por categoría, fecha, ubicación y precio para encontrar eventos que se ajusten a tus intereses.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">✨</div>
+                    <h3 class="step-title">2. Descubre</h3>
+                    <p class="step-description">Encuentra eventos curados, con toda la información clave reunida en un solo lugar.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">🎟️</div>
+                    <h3 class="step-title">3. Asiste</h3>
+                    <p class="step-description">Haz clic en el enlace y regístrate directamente en la página oficial del evento.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -70,7 +98,7 @@
         </div>
     </section>
 
-    <!-- How It Works -->
+    <!-- How It Works >
     <section class="section" id="how-it-works">
         <div class="container">
             <h2 class="section-title">Cómo Funciona</h2>
@@ -96,7 +124,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 
     <!-- Featured Events -->
     <section class="section" id="events">
@@ -106,7 +134,7 @@
             
             <div class="events-grid">
                 <!-- Event 1 -->
-                 <article class="event-card">
+                <article class="event-card" data-category="blockchain" data-location="online" data-date="2025-12-30">
                     <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hackathon de Blockchain" class="event-image">
                     <div class="event-content">
                         <span class="event-category">Blockchain</span>
@@ -126,7 +154,7 @@
 
 
                 <!-- Event 2 -->
-                <article class="event-card">
+                <article class="event-card" data-category="ai" data-location="mexico" data-date="2026-02-15">
                     <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Conferencia de IA" class="event-image">
                     <div class="event-content">
                         <span class="event-category">Inteligencia Artificial</span>
@@ -145,7 +173,7 @@
                 </article>
                 
                 <!-- Event 3 -->
-                <article class="event-card">
+                <article class="event-card" data-category="web" data-location="online" data-date="2026-03-25">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meetup de Desarrollo Web" class="event-image">
                     <div class="event-content">
                         <span class="event-category">Desarrollo Web</span>
@@ -262,11 +290,12 @@
         </div>
     </footer>
 
-    <script>
+    <!--script>
         // Mobile menu toggle
         document.getElementById('mobileMenuBtn').addEventListener('click', function() {
             document.getElementById('navMenu').classList.toggle('active');
         });
-    </script>
+    </script-->
+    <script src="scripts.js"></script>
 </body>
 </html>

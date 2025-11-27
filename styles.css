@@ -678,3 +678,55 @@ footer {
         max-width: 300px;
     }
 }
+
+/* Header Scrolled Effect */
+header.scrolled {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Animation for search results */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating Notifications */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    color: white;
+    font-weight: 600;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 1000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notification-success { 
+    background-color: var(--success); 
+}
+
+.notification-error { 
+    background-color: var(--error); 
+}
+
+.notification-warning { 
+    background-color: var(--warning); 
+    color: var(--dark); 
+}
+
+.notification-info { 
+    background-color: 
+    var(--primary); 
+}
